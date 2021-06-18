@@ -1,0 +1,81 @@
+:root {
+    --text-color: black;
+    --main-color: #00ff84;
+    --gray: #6c757d;
+    --secondary-color: #e3354f;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+.header {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header--search-bar {
+    width: 25vw;
+}
+
+.header--search-bar input {
+    padding: 1rem;
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.navigation--list a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation--list a:hover {
+    text-decoration: underline;
+}
