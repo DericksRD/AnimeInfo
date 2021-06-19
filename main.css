@@ -42,7 +42,7 @@ header {
 }
 
 .header {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -59,21 +59,55 @@ h1 a {
 
 .header--search-bar input {
     padding: 1rem;
-    width: 100%;
+    width: 80%;
+    /* min-width: 30rem; */
+    display: inline-block;
+}
+
+#list-check {
+    display: none;
+}
+
+
+/* #list-check:checked+#list-label span {
+    color: red;
+} */
+
+#list-check:checked~.navigation {
+    right: 0;
 }
 
 .navigation {
+    position: absolute;
+    right: -100%;
+    top: 0;
     list-style: none;
-    width: 40%;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-around;
-    gap: 3rem;
+    background-color: var(--secondary-color);
 }
 
 .navigation--list a {
+    color: white;
     text-decoration: none;
-    color: var(--text-color);
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    #list-label {
+        display: none;
+    }
+    .navigation {
+        right: 0;
+        position: relative;
+        background-color: var(--main-color);
+        width: 40%;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+    .navigation--list a {
+        color: var(--text-color);
+    }
 }
 
 .navigation--list a:hover {
