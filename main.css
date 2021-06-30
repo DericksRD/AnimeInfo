@@ -113,3 +113,39 @@ h1 a {
 .navigation--list a:hover {
     text-decoration: underline;
 }
+
+.slide {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 500px;
+    opacity: 0;
+}
+
+
+/* .slide ul {
+    list-style: none;
+} */
+
+.slide--element label {
+    position: relative;
+    z-index: 3;
+}
+
+#button1:checked~.slide--img {
+    opacity: 1;
+}
+
+#button2:checked~.slide--img {
+    opacity: 1;
+}
+
+#button3:checked~.slide--img {
+    opacity: 1;
+}
