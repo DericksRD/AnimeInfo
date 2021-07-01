@@ -118,6 +118,7 @@ h1 a {
     position: relative;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 50rem;
 }
 
 .slide--img {
@@ -151,4 +152,38 @@ h1 a {
 
 #button3:checked~.slide--img {
     opacity: 1;
+}
+
+.content-page {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.about--info {
+    text-align: justify;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content-page--sidebar ul {
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .content-page {
+        display: flex;
+        gap: 2rem;
+    }
+    .about {
+        flex: 3;
+    }
+    .content-page--sidebar {
+        flex: 1;
+    }
 }
