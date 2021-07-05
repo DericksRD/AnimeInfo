@@ -64,6 +64,14 @@ h1 a {
     display: inline-block;
 }
 
+.header--search-icon {
+    display: inline;
+    height: 2rem;
+    margin-left: -4rem;
+    margin-bottom: -0.5rem;
+    cursor: pointer;
+}
+
 #list-check {
     display: none;
 }

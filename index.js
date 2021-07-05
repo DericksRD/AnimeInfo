@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
         buttons[i].checked = true
     }
 
+    const searchInput = document.querySelector('.header--search-input')
+    const searchIcon = document.querySelector('.header--search-icon')
+
+    searchIcon.addEventListener('click', function() {
+        if (searchInput.value == "") {
+            alert("Debe escribir lo que desea buscar primero")
+                // break
+        } else {
+            localStorage.setItem('animeName', searchInput.value)
+            window.location = "Search.html"
+        }
+    })
 
     /**START ***/
 
