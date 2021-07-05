@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>Anime web site</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -20,22 +20,17 @@
                 <input type="text" placeholder="¿Qué anime estás buscando?">
             </form>
 
-            <input type="checkbox" id="list-check">
-            <label for="list-check" id="list-label">
-                <span>Menú</span>
-            </label>
-
             <nav class="navigation">
                 <li class="navigation--list">
                     <a href="index.html">Home</a>
                 </li>
 
                 <li class="navigation--list">
-                    <a href="Search.html">Anime</a>
+                    <a href="Anime.html">Anime</a>
                 </li>
 
                 <li class="navigation--list">
-                    <a href="Search.html">Manga</a>
+                    <a href="Manga.html">Manga</a>
                 </li>
 
                 <li class="navigation--list">
@@ -47,45 +42,24 @@
     </header>
     <!--HEADER-->
 
-    <main class="slide">
-        <ul>
-            <li class="slide--element">
-                <input type="radio" name="in" id="button1">
-                <label for="button1"></label>
-
-                <img class="slide--img" src="/img/Avatar-The-Last-Airbander.jpg">
-            </li>
-
-            <li class="slide--element">
-                <input type="radio" name="in" id="button2">
-                <label for="button2"></label>
-
-                <img class="slide--img" src="/img/FMAB-cover.jpg">
-            </li>
-
-            <li class="slide--element">
-                <input type="radio" name="in" id="button3">
-                <label for="button3"></label>
-
-                <img class="slide--img" src="/img/Naruto-Shippuden.jpg">
-            </li>
-
-        </ul>
-    </main>
-    <!--MAIN.SLIDE-->
-
     <section class="content-page">
-        <div class="about">
-            <h2>Acerca de</h2>
-            <br>
-            <p class="about--info">
-                Esta página no es un sitio web oficial para ver anime. Este es un proyecto personal en el que he estado trabajando para practicar mi conocimiento.
-            </p>
-            <p class="about--info">
-                Esta página está hecha con el API de Kitsu para conseguir la información de los animes y manga que se busquen.
-            </p>
-        </div>
-        <!--SECTION.CONTENT-PAGE-->
+        <main class="search">
+            <h2>Resultados de la búsqueda</h2>
+
+            <ul class="search--list">
+                <li class="search--element">
+                    <div class="search--img-container">
+                        <img src="/img/FMAB-cover.jpg" alt="Imagen del anime">
+                    </div>
+
+                    <div class="search--element-content">
+                        <h3>Titulo</h3>
+                        <span class="search--anime-desccription">Una pequeña no tan pequeña descripción de nuestro querido anime.</span>
+                        <span class="search--anime-date">Fecha de creación: 29/08/01</span>
+                    </div>
+                </li>
+            </ul>
+        </main>
 
         <aside class="sidebar">
             <h2>Mi Recomendación</h2>
@@ -128,13 +102,13 @@
             </ul>
         </aside>
         <!--ASIDE.SIDEBAR-->
-
     </section>
+
 
     <footer class="footer">
         Rafael Derick Sánchez Lockward, 2020 &copy;
     </footer>
-    <script src="index.js"></script>
+
 </body>
 
 </html>
